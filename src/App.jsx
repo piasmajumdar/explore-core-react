@@ -12,6 +12,8 @@ function App() {
       <Person></Person>
       <Person></Person>
       <Sports></Sports>
+      <Person2></Person2>
+      <Person3></Person3>
     </>
   )
 }
@@ -22,6 +24,27 @@ function Person() {
   return (
     <p>I am a person: {name} {age}</p>
 
+  )
+}
+
+function Person2(){
+  const names = ['Anil', 'Rakib', 'Hitesh', 'Jalil'];
+  return (
+    <div>
+      <p>{names.join(", ")}</p>
+    </div>
+  )
+}
+
+function Person3(){
+  return (
+    <div>
+      <ul>
+        <a href="https://www.google.com">Google</a>
+        <br />
+        <a href="https://bing.com">Bing</a>
+      </ul>
+    </div>
   )
 }
 
