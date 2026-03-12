@@ -1,12 +1,32 @@
 import './App.css'
+import ToDo from "./Todo"
+import {Food, TakeRest} from "./Todo"
 
 function App() {
-
+  
+  let time = 50;
 
   return (
     <>
       <h1>React Core concept</h1>
-      <Student></Student>
+      <ToDo 
+      task ="Learn React" 
+      isDone={true} 
+      time={time}></ToDo>
+      <ToDo 
+      task ="Revise JS" 
+      isDone={false}></ToDo>
+      <ToDo task ="Take a shower" isDone={true} time="100"></ToDo>
+
+      <Food item="Burger" isHungry={true}></Food>
+      <Food item="Noodles" isHungry={false}></Food>
+
+      <TakeRest work="Assignment" isDone={true}></TakeRest>
+      <TakeRest work="Project" isDone={false}></TakeRest>
+      
+
+
+      {/* <Student></Student>
       <Student></Student>
       <Person></Person>
       <Developer name="Majumdar" tech="Python"></Developer>
@@ -22,7 +42,9 @@ function App() {
       <MobilePhone name="iPhone 11" price="50000"></MobilePhone>
       <MobilePhone name="iPhone 16" price="120000"></MobilePhone>
       <Book name="Death" author="Sadhguru JV"></Book>
-      <Book name="Karma" author="Sadhguru JV"></Book>
+      <Book name="Karma" author="Sadhguru JV"></Book> */}
+
+
 
     </>
   )
