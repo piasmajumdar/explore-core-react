@@ -40,3 +40,17 @@
 .read-the-docs {
   color: #888;
 }
+
+
+.student {
+  padding: 10px;
+  margin: 10px;
+  border-radius: 20px;
+  border: 3px solid salmon;
+}
+
+.device{
+  padding: 3px;
+  border: 2px solid rebeccapurple;
+  margin: 10px;
+}

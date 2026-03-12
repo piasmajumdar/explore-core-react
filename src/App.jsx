@@ -5,29 +5,67 @@ function App() {
 
   return (
     <>
-      <h1>Vite + React</h1>
+      <h1>React Core concept</h1>
+      <Student></Student>
+      <Student></Student>
       <Person></Person>
-      <Cat></Cat>
-      <Sports></Sports>
-      <Person></Person>
-      <Person></Person>
-      <Sports></Sports>
-      <Person2></Person2>
-      <Person3></Person3>
+      <Developer name="Majumdar" tech="Python"></Developer>
+      <Developer name="Rajon" tech="JS"></Developer>
+      <Developer name="Shabana" tech="Java"></Developer>
+      <Device name="Laptop"></Device>
+      <Device name="iPhone"></Device>
+      <Device name="Motorolla"></Device>
     </>
+  )
+}
+
+function Device(props){
+  console.log(props);
+  return (
+    <div className='device'>
+      <p>Device Name: {props.name}</p>
+    </div>
+  )
+}
+
+function Developer(props) {
+  console.log(props)
+  return (
+    <div style={{
+      border: '2px solid green',
+      borderRadius: '20px'
+    }}>
+      <h3>Developer: {props.name}</h3>
+      <p>Technology: {props.tech}</p>
+    </div>
   )
 }
 
 function Person() {
   const name = 'Pias';
   const age = 24;
+  const personStyle = {
+    color: 'red',
+    textAlign: 'right'
+  }
   return (
-    <p>I am a person: {name} {age}</p>
+    <p style={personStyle}>I am a person: {name} {age}</p>
 
   )
 }
 
-function Person2(){
+function Student() {
+  return (
+    <div className='student'>
+      <p>Name: </p>
+      <p>Department: </p>
+    </div>
+  )
+}
+
+
+
+function Person2() {
   const names = ['Anil', 'Rakib', 'Hitesh', 'Jalil'];
   return (
     <div>
@@ -36,7 +74,7 @@ function Person2(){
   )
 }
 
-function Person3(){
+function Person3() {
   return (
     <div>
       <ul>
@@ -48,8 +86,8 @@ function Person3(){
   )
 }
 
-function Cat(){
-  return(
+function Cat() {
+  return (
     <p>Cat</p>
   )
 }
