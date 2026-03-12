@@ -15,7 +15,53 @@ function App() {
       <Device name="Laptop"></Device>
       <Device name="iPhone"></Device>
       <Device name="Motorolla"></Device>
+      <Player name="tamim" runs="5000"></Player>
+      <Player name="mushi" runs="5000"></Player>
+      <Salami event="Eid" amount="20"></Salami>
+      <Salami event="Graduation"></Salami>
+      <MobilePhone name="iPhone 11" price="50000"></MobilePhone>
+      <MobilePhone name="iPhone 16" price="120000"></MobilePhone>
+      <Book name="Death" author="Sadhguru JV"></Book>
+      <Book name="Karma" author="Sadhguru JV"></Book>
+
     </>
+  )
+}
+
+function Book({name, author}){
+  return (
+    <div>
+      <h3>Book Name: {name}</h3>
+      <p>Author: {author}</p>
+    </div>
+  )
+}
+
+function MobilePhone({name, price}) {
+  return (
+    <div className='mobile-phone'>
+      <h3>Model: {name}</h3>
+      <p>Price: {price}</p>
+    </div>
+  )
+}
+
+function Salami({event, amount=0}){
+  return (
+    <div>
+      <p>Salami For: {event}</p>
+      <p>Amount: {amount}</p>
+    </div>
+  )
+}
+
+// const {name, runs} = {name: 'tamim', runs: '5000'}
+function Player({name, runs}){
+  return (
+    <div>
+      <h3>Name: {name}</h3>
+      <p>Runs: {runs}</p>
+    </div>
   )
 }
 
@@ -28,6 +74,7 @@ function Device(props){
   )
 }
 
+// const {name, tech} = {name: 'Shabana', tech: 'Java'}
 function Developer(props) {
   console.log(props)
   return (
