@@ -1,31 +1,50 @@
 import './App.css'
-import ToDo from "./Todo"
-import {Food, TakeRest} from "./Todo"
+import ToDo from "./Todo";
+import {Food, TakeRest} from "./Todo";
+import Actor from "./Actor";
+import { act } from 'react';
+import Singer from './Singer';
 
 function App() {
   
-  let time = 50;
+  const actors = ["Bappa Raj", 'Omar Sunny', 'Salman Shah', 'Jasim', 'Anwar', 'Rajjak'];
+
+  const singers = [
+    {id:1, name: 'Dr. Mahfuz', age: 68},
+    {id:2, name: 'Tahsan', age: 45},
+    {id:3, name: 'Shuvro Deb', age: 57}
+  ];
+
+
+  // let time = 50;
 
   return (
     <>
       <h1>React Core concept</h1>
-      <ToDo 
+
+      {
+        singers.map(singer => <Singer key={singer.id} singer={singer}></Singer>)
+      }
+
+      {/* {actors.map(actor => <Actor actor={actor}></Actor>)} */}
+
+      {/* <ToDo 
       task ="Learn React" 
       isDone={true} 
       time={time}></ToDo>
       <ToDo 
       task ="Revise JS" 
       isDone={false}></ToDo>
-      <ToDo task ="Take a shower" isDone={true} time=""></ToDo>
+      <ToDo task ="Take a shower" isDone={true} time=""></ToDo> */}
 
 
-      <h2>Practice Code</h2>
+      {/* <h2>Practice Code</h2>
       <Food item="Burger" isHungry={true}></Food>
       <Food item="Noodles" isHungry={false}></Food>
 
       <TakeRest work="Assignment" isDone={true}></TakeRest>
       <TakeRest work="Project" isDone={false}></TakeRest>
-      
+       */}
 
 
       {/* <Student></Student>
