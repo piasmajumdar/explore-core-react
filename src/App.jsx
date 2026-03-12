@@ -16,8 +16,10 @@ function App() {
       <ToDo 
       task ="Revise JS" 
       isDone={false}></ToDo>
-      <ToDo task ="Take a shower" isDone={true} time="100"></ToDo>
+      <ToDo task ="Take a shower" isDone={true} time=""></ToDo>
 
+
+      <h2>Practice Code</h2>
       <Food item="Burger" isHungry={true}></Food>
       <Food item="Noodles" isHungry={false}></Food>
 
